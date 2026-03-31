@@ -27,20 +27,9 @@
       align-items: center;
       padding: 40px 16px;
     }
-    header {
-      text-align: center;
-      margin-bottom: 36px;
-    }
-    header h1 {
-      font-size: 2rem;
-      color: var(--accent);
-      letter-spacing: 2px;
-    }
-    header p {
-      color: var(--muted);
-      margin-top: 8px;
-      font-size: 0.95rem;
-    }
+    header { text-align: center; margin-bottom: 36px; }
+    header h1 { font-size: 2rem; color: var(--accent); letter-spacing: 2px; }
+    header p { color: var(--muted); margin-top: 8px; font-size: 0.95rem; }
     .badge {
       display: inline-block;
       background: #1f2937;
@@ -51,10 +40,7 @@
       color: var(--yellow);
       margin-top: 10px;
     }
-    #quiz-container {
-      width: 100%;
-      max-width: 720px;
-    }
+    #quiz-container { width: 100%; max-width: 720px; }
     .question-card {
       background: var(--panel);
       border: 1px solid var(--border);
@@ -64,21 +50,14 @@
       transition: border-color 0.2s;
     }
     .question-card:hover { border-color: var(--accent); }
-    .q-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 14px;
-    }
+    .q-header { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
     .q-num {
       background: var(--accent);
       color: #0d1117;
       border-radius: 50%;
       width: 28px; height: 28px;
       display: flex; align-items: center; justify-content: center;
-      font-weight: 700;
-      font-size: 0.85rem;
-      flex-shrink: 0;
+      font-weight: 700; font-size: 0.85rem; flex-shrink: 0;
     }
     .q-type {
       font-size: 0.72rem;
@@ -87,16 +66,10 @@
       padding: 2px 8px;
       color: var(--muted);
     }
-    .q-text {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: var(--text);
-    }
+    .q-text { font-size: 1rem; line-height: 1.6; color: var(--text); }
     .choices { margin-top: 14px; display: flex; flex-direction: column; gap: 8px; }
     .choice-label {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      display: flex; align-items: center; gap: 10px;
       background: #0d1117;
       border: 1px solid var(--border);
       border-radius: 8px;
@@ -107,80 +80,75 @@
     }
     .choice-label:hover { border-color: var(--accent); background: #1c2128; }
     .choice-label input[type=radio] { accent-color: var(--accent); width: 16px; height: 16px; }
-    .choice-key {
-      font-weight: 700;
-      color: var(--accent);
-      min-width: 20px;
-    }
+    .choice-key { font-weight: 700; color: var(--accent); min-width: 20px; }
     .short-input {
-      margin-top: 14px;
-      width: 100%;
+      margin-top: 14px; width: 100%;
       background: #0d1117;
       border: 1px solid var(--border);
       border-radius: 8px;
       padding: 10px 14px;
-      color: var(--text);
-      font-size: 0.95rem;
-      outline: none;
+      color: var(--text); font-size: 0.95rem; outline: none;
       transition: border-color 0.15s;
     }
     .short-input:focus { border-color: var(--accent); }
-    /* result states */
-    .card-correct  { border-color: var(--green) !important; }
-    .card-wrong    { border-color: var(--red)   !important; }
+    .card-correct { border-color: var(--green) !important; }
+    .card-wrong   { border-color: var(--red)   !important; }
     .feedback { margin-top: 12px; font-size: 0.88rem; display: none; }
-    .feedback.show { display: block; }
+    .feedback.show    { display: block; }
     .feedback.correct { color: var(--green); }
     .feedback.wrong   { color: var(--red); }
     .submit-btn {
-      display: block;
-      width: 100%;
-      max-width: 720px;
-      margin: 10px auto 0;
-      padding: 14px;
-      background: var(--accent);
-      color: #0d1117;
-      border: none;
-      border-radius: 10px;
-      font-size: 1rem;
-      font-weight: 700;
-      cursor: pointer;
-      letter-spacing: 1px;
-      transition: opacity 0.2s;
+      display: block; width: 100%; max-width: 720px;
+      margin: 10px auto 0; padding: 14px;
+      background: var(--accent); color: #0d1117;
+      border: none; border-radius: 10px;
+      font-size: 1rem; font-weight: 700; cursor: pointer;
+      letter-spacing: 1px; transition: opacity 0.2s;
     }
-    .submit-btn:hover { opacity: 0.85; }
+    .submit-btn:hover    { opacity: 0.85; }
     .submit-btn:disabled { opacity: 0.4; cursor: not-allowed; }
     #result-box {
-      display: none;
-      width: 100%;
-      max-width: 720px;
+      display: none; width: 100%; max-width: 720px;
       margin-top: 28px;
       background: var(--panel);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 32px;
-      text-align: center;
+      padding: 32px; text-align: center;
     }
     #result-box h2 { font-size: 1.6rem; margin-bottom: 8px; }
-    #score-display {
-      font-size: 3rem;
-      font-weight: 800;
-      margin: 16px 0;
-    }
+    #score-display { font-size: 3rem; font-weight: 800; margin: 16px 0; }
     #result-msg { color: var(--muted); font-size: 1rem; }
-    #already-done {
+    #wrong-list {
+      margin-top: 20px;
+      background: #0d1117;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      text-align: left;
+      font-size: 0.9rem;
       display: none;
-      width: 100%;
-      max-width: 720px;
+    }
+    #wrong-list h3 { color: var(--red); margin-bottom: 10px; font-size: 0.95rem; }
+    #wrong-list ul { padding-left: 18px; color: var(--text); line-height: 2; }
+    #already-done {
+      display: none; width: 100%; max-width: 720px;
       background: var(--panel);
       border: 1px solid var(--yellow);
       border-radius: 12px;
-      padding: 40px;
-      text-align: center;
+      padding: 40px; text-align: center;
     }
     #already-done h2 { color: var(--yellow); font-size: 1.4rem; }
     #already-done p  { color: var(--muted); margin-top: 10px; }
     #already-done .prev-score { font-size: 2.5rem; font-weight: 800; margin: 16px 0; }
+    #already-done .wrong-info {
+      margin-top: 16px;
+      background: #0d1117;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 0.88rem;
+      color: var(--red);
+    }
     .flag {
       font-family: monospace;
       background: #0d1117;
@@ -207,88 +175,36 @@
   <h2>⚠️ 이미 응시 완료</h2>
   <div class="prev-score" id="prev-score-display"></div>
   <p>이 CTF는 1회만 응시할 수 있습니다.<br/>결과는 로컬에 저장되어 새로고침해도 유지됩니다.</p>
+  <div class="wrong-info" id="already-wrong-list" style="display:none"></div>
 </div>
 
 <div id="quiz-container"></div>
 <button class="submit-btn" id="submit-btn" style="display:none">🚩 제출하기</button>
+
 <div id="result-box">
   <h2>🏁 최종 결과</h2>
   <div id="score-display"></div>
   <div id="result-msg"></div>
+  <div id="wrong-list"><h3>❌ 틀린 문제</h3><ul id="wrong-items"></ul></div>
   <div class="flag" id="flag-display" style="display:none"></div>
 </div>
+
 <footer>© 2026 WhAnci · Networking CTF</footer>
 
 <script>
 const STORAGE_KEY = 'networking_ctf_done';
 
 const questions = [
-  {
-    id: 1,
-    type: 'mc',
-    text: 'IP 192.168.1.0/24를 8개의 서브넷으로 나눌 때 올바른 서브넷 마스크는?',
-    choices: ['/25', '/26', '/27', '/28'],
-    answer: 'C'
-  },
-  {
-    id: 2,
-    type: 'short',
-    text: '/27 서브넷에서 사용 가능한 호스트 수는? (숫자만 입력)',
-    answer: '30'
-  },
-  {
-    id: 3,
-    type: 'mc',
-    text: '다음 IP의 네트워크 주소는?\nIP: 192.168.5.130/26',
-    choices: ['192.168.5.0', '192.168.5.64', '192.168.5.128', '192.168.5.192'],
-    answer: 'C'
-  },
-  {
-    id: 4,
-    type: 'short',
-    text: '/30 서브넷에서 사용 가능한 호스트 수는? (숫자만 입력)',
-    answer: '2'
-  },
-  {
-    id: 5,
-    type: 'mc',
-    text: '다음 중 라우팅의 역할은?',
-    choices: ['데이터 압축', '패킷 경로 선택', 'IP 주소 할당', '에러 수정'],
-    answer: 'B'
-  },
-  {
-    id: 6,
-    type: 'mc',
-    text: '정적 라우팅의 특징으로 옳은 것은?',
-    choices: ['자동으로 경로가 변경된다', '관리자 수동 설정 필요', '항상 최적 경로를 찾는다', '라우팅 프로토콜 필요'],
-    answer: 'B'
-  },
-  {
-    id: 7,
-    type: 'mc',
-    text: '다음 중 다이나믹 라우팅 프로토콜은?',
-    choices: ['ARP', 'FTP', 'OSPF', 'DNS'],
-    answer: 'C'
-  },
-  {
-    id: 8,
-    type: 'short',
-    text: '라우팅 테이블에서 패킷이 다음으로 이동할 장비를 무엇이라 하는가? (영어로 입력)',
-    answer: 'next hop'
-  },
-  {
-    id: 9,
-    type: 'mc',
-    text: '서브네팅의 주요 목적은?',
-    choices: ['인터넷 속도 증가', '네트워크 분할 및 관리 효율 증가', 'CPU 성능 향상', '전력 절약'],
-    answer: 'B'
-  },
-  {
-    id: 10,
-    type: 'short',
-    text: '192.168.1.0/26에서 하나의 서브넷 크기(블록 크기)는? (숫자만 입력)',
-    answer: '64'
-  }
+  { id:1,  type:'mc',    text:'IP 192.168.1.0/24를 8개의 서브넷으로 나눠 때 올바른 서브넷 마스크는?', choices:['/25','/26','/27','/28'], answer:'C' },
+  { id:2,  type:'short', text:'/27 서브넷에서 사용 가능한 호스트 수는? (숫자만 입력)', answer:'30' },
+  { id:3,  type:'mc',    text:'다음 IP의 네트워크 주소는?\nIP: 192.168.5.130/26', choices:['192.168.5.0','192.168.5.64','192.168.5.128','192.168.5.192'], answer:'C' },
+  { id:4,  type:'short', text:'/30 서브넷에서 사용 가능한 호스트 수는? (숫자만 입력)', answer:'2' },
+  { id:5,  type:'mc',    text:'다음 중 라우팅의 역할은?', choices:['데이터 압축','패킷 경로 선택','IP 주소 할당','에러 수정'], answer:'B' },
+  { id:6,  type:'mc',    text:'정적 라우팅의 특징으로 옵은 것은?', choices:['자동으로 경로가 변경된다','관리자 수동 설정 필요','항상 최적 경로를 찾는다','라우팅 프로토콜 필요'], answer:'B' },
+  { id:7,  type:'mc',    text:'다음 중 다이나믹 라우팅 프로토콜은?', choices:['ARP','FTP','OSPF','DNS'], answer:'C' },
+  { id:8,  type:'short', text:'라우팅 테이블에서 패킷이 다음으로 이동할 장비를 무엇이라 하는가? (영어로 입력)', answer:'next hop' },
+  { id:9,  type:'mc',    text:'서브네팅의 주요 목적은?', choices:['인터넷 속도 증가','네트워크 분할 및 관리 효율 증가','CPU 성능 향상','전력 절약'], answer:'B' },
+  { id:10, type:'short', text:'192.168.1.0/26에서 하나의 서브넷 크기(블록 크기)는? (숫자만 입력)', answer:'64' }
 ];
 
 const keys = ['A','B','C','D'];
@@ -300,11 +216,16 @@ function init() {
     document.getElementById('already-done').style.display = 'block';
     document.getElementById('prev-score-display').textContent =
       data.score + ' / ' + data.total + '점';
+    if (data.wrongIds && data.wrongIds.length > 0) {
+      const el = document.getElementById('already-wrong-list');
+      el.style.display = 'block';
+      el.innerHTML = '❌ 틀린 문제: ' + data.wrongIds.map(id => id + '번').join(', ');
+    }
     return;
   }
 
   const container = document.getElementById('quiz-container');
-  questions.forEach((q, i) => {
+  questions.forEach(q => {
     const card = document.createElement('div');
     card.className = 'question-card';
     card.id = 'card-' + q.id;
@@ -326,14 +247,12 @@ function init() {
             <span class="choice-key">${keys[ci]}.</span>
             <span>${c}</span>
           </label>
-        `).join('') +
-        '</div>';
+        `).join('') + '</div>';
     } else {
       input = `<input class="short-input" id="short-${q.id}" type="text" placeholder="답 입력..." autocomplete="off" />`;
     }
 
-    card.innerHTML = header + input +
-      `<div class="feedback" id="fb-${q.id}"></div>`;
+    card.innerHTML = header + input + `<div class="feedback" id="fb-${q.id}"></div>`;
     container.appendChild(card);
   });
 
@@ -344,6 +263,7 @@ function init() {
 function submitQuiz() {
   let score = 0;
   let allAnswered = true;
+  const wrongIds = [];
 
   questions.forEach(q => {
     let userAns = '';
@@ -357,22 +277,21 @@ function submitQuiz() {
       if (!userAns) { allAnswered = false; return; }
     }
 
-    const correct = q.answer.toLowerCase();
     const card = document.getElementById('card-' + q.id);
     const fb   = document.getElementById('fb-' + q.id);
 
-    if (userAns === correct) {
+    if (userAns === q.answer.toLowerCase()) {
       score++;
       card.classList.add('card-correct');
       fb.textContent = '✅ 정답!';
       fb.className = 'feedback show correct';
     } else {
+      wrongIds.push(q.id);
       card.classList.add('card-wrong');
-      fb.textContent = `❌ 오답 — 정답: ${q.answer}`;
+      fb.textContent = '❌ 틀렸습니다.';
       fb.className = 'feedback show wrong';
     }
 
-    // disable inputs
     if (q.type === 'mc') {
       document.querySelectorAll(`input[name="q${q.id}"]`).forEach(r => r.disabled = true);
     } else {
@@ -385,17 +304,20 @@ function submitQuiz() {
     return;
   }
 
-  // save to localStorage
-  localStorage.setItem(STORAGE_KEY, JSON.stringify({ score, total: questions.length, date: Date.now() }));
+  localStorage.setItem(STORAGE_KEY, JSON.stringify({
+    score, total: questions.length, wrongIds, date: Date.now()
+  }));
 
   const btn = document.getElementById('submit-btn');
   btn.disabled = true;
   btn.textContent = '✅ 제출 완료';
 
-  const resultBox = document.getElementById('result-box');
+  const resultBox    = document.getElementById('result-box');
   const scoreDisplay = document.getElementById('score-display');
-  const resultMsg = document.getElementById('result-msg');
-  const flagDisplay = document.getElementById('flag-display');
+  const resultMsg    = document.getElementById('result-msg');
+  const flagDisplay  = document.getElementById('flag-display');
+  const wrongListEl  = document.getElementById('wrong-list');
+  const wrongItems   = document.getElementById('wrong-items');
 
   resultBox.style.display = 'block';
   resultBox.scrollIntoView({ behavior: 'smooth' });
@@ -403,6 +325,15 @@ function submitQuiz() {
   const pct = score / questions.length;
   scoreDisplay.textContent = score + ' / ' + questions.length + '점';
   scoreDisplay.style.color = pct >= 0.8 ? 'var(--green)' : pct >= 0.5 ? 'var(--yellow)' : 'var(--red)';
+
+  if (wrongIds.length > 0) {
+    wrongListEl.style.display = 'block';
+    wrongIds.forEach(id => {
+      const li = document.createElement('li');
+      li.textContent = id + '번 문제';
+      wrongItems.appendChild(li);
+    });
+  }
 
   if (pct === 1) {
     resultMsg.textContent = '🎉 완벽합니다! 모두 정답!';
