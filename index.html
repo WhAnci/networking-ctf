@@ -259,7 +259,7 @@ const questions = [
   {
     id: 6,
     type: 'mc',
-    text: '정적 라우팅의 특징으로 옳은 것은?',
+    text: '정적 라우팅의 특징으로 옵은 것은?',
     choices: ['자동으로 경로가 변경된다', '관리자 수동 설정 필요', '항상 최적 경로를 찾는다', '라우팅 프로토콜 필요'],
     answer: 'B'
   },
@@ -368,7 +368,7 @@ function submitQuiz() {
       fb.className = 'feedback show correct';
     } else {
       card.classList.add('card-wrong');
-      fb.textContent = `❌ 오답 — 정답: ${q.answer}`;
+      fb.textContent = '❌ 틀렸습니다.';
       fb.className = 'feedback show wrong';
     }
 
@@ -409,7 +409,7 @@ function submitQuiz() {
     flagDisplay.style.display = 'inline-block';
     flagDisplay.textContent = 'FLAG{subnet_master_routing_pro_2026}';
   } else if (pct >= 0.8) {
-    resultMsg.textContent = '🔥 훌륭해요! 네트워크 실력이 뛰어나네요.';
+    resultMsg.textContent = '🔥 훌륨해요! 네트워크 실력이 뛰어나네요.';
   } else if (pct >= 0.5) {
     resultMsg.textContent = '📚 절반 이상 맞췄어요. 조금 더 공부해보세요!';
   } else {
